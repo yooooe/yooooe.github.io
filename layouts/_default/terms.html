@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class='container'>
+    <div class='index'>
+        <h1>#</h1>
+        {{ range .Data.Terms.Alphabetical }}
+        <p>
+            <a class="btn btn-outline-dark font-125" href="{{ .Page.Permalink }}">
+            {{ .Page.Title }}
+            <span style="float:right;">{{ .Count }}</span>
+            </a>
+        </p>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

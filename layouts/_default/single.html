@@ -1,0 +1,8 @@
+{{ define "main" }}
+<section class='container'>
+    <div class='index'>
+        {{ partial "date-tags.html" . }}
+        {{ .Content }}
+    </div>
+</section>
+{{ end }}

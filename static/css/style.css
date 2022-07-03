@@ -1,0 +1,231 @@
+@font-face {
+    font-family: opensans;
+    src: url(../media/fonts/OpenSans-Regular.woff);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 950px) {
+
+    /* Css for Mobile goes here like sample below*/
+    .container {
+        width:  100%;
+        --pad:  5px;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+
+    /* Css for Desktop goes here like sample below*/
+    .container {
+        width:  600px;
+        --pad:  4px;
+    }
+}
+
+body {
+    /* Var*/
+    --textCol:          #000;
+    --linkCol:          #0000ff;
+    --mainCol:          #000;
+    --subCol:           #a1a1a1;
+    --lineW:            1px;
+
+    background-color:   transparent;
+    color:              var(--textCol);
+    position:           relative;
+    overflow-y:         scroll;
+
+    font-weight:        lighter;
+    font-size:          16px;
+    font-family:        "MS PGothic", sans-serif;
+}
+
+::selection {
+    background: #e1e1e1;
+}
+
+/* divs */
+.container {
+    display:            left;
+    text-align:         justify;
+    border-style:       none;
+    border-width:       var(--lineW);
+    border-radius:      calc(var(--pad) * 8);
+    border-color:       var(--subCol);
+    background-color:   transparent;
+
+    margin-top:         calc(var(--pad) * 2);
+    margin-right:       auto;
+    margin-left:        auto;
+    
+}
+
+.index {
+    display:            block;
+    text-align:         justify;
+    margin:             var(--pad);
+
+    padding:            calc(var(--pad) * 2);
+    padding-top:        calc(var(--pad) * 4);
+    padding-bottom:     calc(var(--pad) * 4);
+
+    
+    margin-top:         calc(var(--pad) * 8);
+    
+
+    line-height:        calc(var(--pad) * 4);
+    word-wrap:          break-word;
+    overflow:           auto;
+    border-style:       solid;
+    border-width:       var(--lineW);
+    border-radius:      calc(var(--pad) * 8);
+    border-color:       var(--subCol);
+}
+
+
+/* text/media style */
+h1 {
+    background-color:   transparent;
+    color:              var(--textCol);
+    display:            block;
+    text-align:         justify;
+    font-weight:        lighter;
+    font-size:          16px;
+    font-family:        "MS PGothic", sans-serif;
+    
+    padding-left:       calc(var(--pad) * 2);
+    padding-right:      calc(var(--pad) * 2);
+    
+    margin-top:         calc(var(--pad) * 2);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    margin-bottom:      calc(var(--pad) * 6);
+}
+
+ul {
+    list-style-type:    none;
+    padding-left:       calc(var(--pad) * 4);
+    padding-right:      calc(var(--pad) * 4);
+
+    margin-top:         calc(var(--pad) * 2);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    margin-bottom:      calc(var(--pad) * 2);
+}
+
+li {
+    margin-bottom:      var(--pad);
+}
+
+li:before {
+    content:            none;
+    padding-right:      var(--pad);
+}
+
+a {
+    text-decoration:    none;
+    color:              var(--linkCol);
+}
+
+a:hover {
+    text-decoration:    none;
+    background-color:   #e1e1e1;
+    color:              var(--linkCol);
+}
+
+hr {
+    border:             none;
+    height:             1px;
+    background:         var(--subCol);
+    width: calc(100% - calc(var(--pad) * 8));
+}
+
+p {
+
+    padding-left:       calc(var(--pad) * 2);
+    padding-right:      calc(var(--pad) * 2);
+    
+    margin-top:         calc(var(--pad) * 2);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    margin-bottom:      calc(var(--pad) * 2);
+
+    
+
+
+}
+
+img {
+    display:            block;
+    margin-left:        auto;
+    margin-right:       auto;
+
+    object-fit: cover;
+    width:              80%;
+    border:             var(--lineW) solid;
+    border-color:       var(--subCol);
+    border-radius:      calc(var(--pad) * 2);
+}
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee:hover span {
+  animation-play-state: paused;
+}
+
+
+/* flex */
+.flex-container {
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-between;
+    align-content:      space-around;
+    align-items:        flex-start;
+    padding:            var(--pad) calc(var(--pad) * 2) calc(var(--pad) * 3) calc(var(--pad) * 2);
+    
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    
+    border-left:        var(--lineW) solid;
+    border-right:       var(--lineW) solid;
+    border-bottom:      var(--lineW) solid;
+    border-color:       var(--subCol);
+
+    border-bottom-left-radius:  calc(var(--pad) * 5);
+    border-bottom-right-radius: calc(var(--pad) * 5);
+}
+
+.flex-cell {
+    text-align:         center;
+    flex-grow:          1;
+    padding:            var(--pad);
+    padding-bottom:     calc(var(--pad) * 2);
+    margin:             var(--pad);
+    border-radius:      var(--pad);
+    border-color:       var(--subCol);
+}
+
+.flex-cell>a {
+    text-decoration:    none;
+    background-color:   transparent;
+    border-radius:      calc(var(--pad) * 3);
+
+    border:             dashed 1px var(--subCol);
+    padding:            calc(var(--pad) * 1.5);
+}
+
+.flex-cell>a:active, .flex-cell>a:hover {
+    border:             solid 1px var(--subCol);
+}
+
+.break {
+    flex-basis:         100%;
+    height:             0;
+}
