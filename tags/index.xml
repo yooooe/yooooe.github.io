@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on YOE</title>
+    <link>https://yooooe.github.io/tags/</link>
+    <description>Recent content in Tags on YOE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Jul 2022 14:28:30 +0100</lastBuildDate><atom:link href="https://yooooe.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dump</title>
+      <link>https://yooooe.github.io/tags/dump/</link>
+      <pubDate>Sun, 03 Jul 2022 14:28:30 +0100</pubDate>
+      
+      <guid>https://yooooe.github.io/tags/dump/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>https://yooooe.github.io/tags/notes/</link>
+      <pubDate>Sun, 03 Jul 2022 14:28:30 +0100</pubDate>
+      
+      <guid>https://yooooe.github.io/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
