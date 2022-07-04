@@ -163,12 +163,11 @@ img {
     display:            block;
     margin-left:        auto;
     margin-right:       auto;
+    padding-top:        calc(var(--pad) * 4);
+    padding-bottom:     calc(var(--pad) * 4);
 
     object-fit: cover;
-    width:              80%;
-    border:             var(--lineW) solid;
-    border-color:       var(--subCol);
-    border-radius:      calc(var(--pad) * 2);
+    width:              100%;
 }
 
 .marquee {
