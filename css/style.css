@@ -123,7 +123,7 @@ li {
 
 li:before {
     content:            none;
-    padding-right:      var(--pad);
+    padding-right:      calc(var(--pad) * 2);
 }
 
 a {
