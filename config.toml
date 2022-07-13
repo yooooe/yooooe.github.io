@@ -23,5 +23,5 @@ title = 'YOE'
         weight = 3
 
 [params]
-    dateFormat = "Jan 2, 2006"
-    homeText = "blog"
+    dateFormat = "02 01 06"
+    homeText = ""

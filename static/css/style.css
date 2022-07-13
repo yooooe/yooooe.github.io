@@ -21,7 +21,7 @@ html {
 
     /* Css for Desktop goes here like sample below*/
     .container {
-        width:  600px;
+        width:  512px;
         --pad:  4px;
     }
 }
@@ -29,7 +29,7 @@ html {
 body {
     /* Var*/
     --textCol:          #000;
-    --linkCol:          #0000ff;
+    --linkCol:          #7a7a7a;
     --mainCol:          #000;
     --subCol:           #a1a1a1;
     --lineW:            1px;
@@ -54,7 +54,7 @@ body {
     text-align:         justify;
     border-style:       none;
     border-width:       var(--lineW);
-    border-radius:      calc(var(--pad) * 8);
+    border-radius:      calc(var(--pad) * 9);
     border-color:       var(--subCol);
     background-color:   transparent;
 
@@ -123,7 +123,7 @@ li {
 
 li:before {
     content:            none;
-    padding-right:      var(--pad);
+    padding-right:      calc(var(--pad) * 2);
 }
 
 a {
@@ -138,10 +138,11 @@ a:hover {
 }
 
 hr {
+
+    width:              calc(25% - calc(var(--pad) * 8));
     border:             none;
+    border-top:         1px dashed var(--subCol);
     height:             1px;
-    background:         var(--subCol);
-    width: calc(100% - calc(var(--pad) * 8));
 }
 
 p {
@@ -163,12 +164,11 @@ img {
     display:            block;
     margin-left:        auto;
     margin-right:       auto;
+    padding-top:        calc(var(--pad) * 4);
+    padding-bottom:     calc(var(--pad) * 4);
 
     object-fit: cover;
-    width:              80%;
-    border:             var(--lineW) solid;
-    border-color:       var(--subCol);
-    border-radius:      calc(var(--pad) * 2);
+    width:              100%;
 }
 
 .marquee {

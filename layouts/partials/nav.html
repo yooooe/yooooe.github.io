@@ -1,21 +1,26 @@
-
 <section class='container'>
     <div class='index'>
-        <h1>vgame + write + sound</h1>
-        <hr>
-        <p>hi : <a href="mailto:yooooe@protonmail.com">yooooe@protonmail.com</a></p>
+        <h1>yoe</h1>
         <div class="flex-container">
-
-            <!--sitemap-->
-            {{ range .Site.Menus.main }}
-            {{ $text := print .Name | safeHTML }}
-
-            <div class='flex-cell'>
-                <a class="nav-link" href="{{ .URL }}">{{ $text }}</a>
+            <div class='flex-cell'> 
+                <a href="/">⤤ 📁</a>
             </div>
-            {{ end }}
-            <!--external-->
-            <div class='flex-cell'> <a href="https://soundcloud.com/yoeyoeyoe">soundcloud</a> </div>
+            <div class='flex-cell'> 
+                <a href="/tags/">⤤ 🗄️</a>
+            </div>
+            <div class='flex-cell'>
+                <span style="color:#a1a1a1;">|</span>
+            </div>
+            <!--external links-->
+            <div class='flex-cell'> 
+                <a href="https://soundcloud.com/yoeyoeyoe">⤤ 🎧</a>
+            </div>
+            <div class='flex-cell'> 
+                <a href="/">⤤ 🎮</a>
+            </div>
+            <div class='flex-cell'> 
+                <a href="mailto:yooooe@protonmail.com">⤤ 📧</a>
+            </div>
         </div>
     </div>
 </section>

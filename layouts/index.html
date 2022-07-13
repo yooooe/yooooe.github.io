@@ -1,15 +1,19 @@
 {{ define "main" }}
 <section class='container'>
     <div class='index'>
-        <h1>welcome to blogsite</h1>
-        <hr>
-        <p>mostly writing to dump thoughts about games, art, 'culture' etc. soundcloud link above takes you to my music. </p>
-        <p>also an 'artist' and currently making simple 3D videogames with low-level frameworks like <a href="https://www.raylib.com/">Raylib</a>.</p>
+        {{ range .Pages.ByPublishDate.Reverse }}
+        <p>
+            <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span style="float:right;">
+                {{ partial "date.html" . }}
+            </span>
+        </p>
+        {{ end }}
     </div>
 </section>
 <section class='container'>
     <div class='index'>
-        <h1>good websites </h1>
+        <h1>links </h1>
         <p><a href="http://harmonyzone.org/">http://harmonyzone.org/</a></p>
         <p><a href="https://myfriendpokey.tumblr.com/">https://myfriendpokey.tumblr.com/</a></p>
         <p><a href="https://www.cicadamarionette.com/">https://www.cicadamarionette.com/</a></p>
