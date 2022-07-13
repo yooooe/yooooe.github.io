@@ -215,10 +215,10 @@ img {
 .flex-cell>a {
     text-decoration:    none;
     background-color:   transparent;
-    border-radius:      calc(var(--pad) * 3);
+    border-radius:      calc(var(--pad) * 5);
 
     border:             dashed 1px var(--subCol);
-    padding:            calc(var(--pad) * 1.5);
+    padding:            calc(var(--pad) * 2);
 }
 
 .flex-cell>a:active, .flex-cell>a:hover {
