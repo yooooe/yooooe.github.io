@@ -1,15 +1,9 @@
-@font-face {
-    font-family: opensans;
-    src: url(../media/fonts/OpenSans-Regular.woff);
-}
-
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 
 @media only screen and (max-width: 950px) {
-
-    /* Css for Mobile goes here like sample below*/
+    /* Css for Mobile goes here*/
     .container {
         width:  100%;
         --pad:  5px;
@@ -18,10 +12,9 @@ html {
 }
 
 @media only screen and (min-width: 950px) {
-
-    /* Css for Desktop goes here like sample below*/
+    /* Css for Desktop goes here*/
     .container {
-        width:  512px;
+        width:  640px;
         --pad:  4px;
     }
 }
@@ -40,12 +33,12 @@ body {
     overflow-y:         scroll;
 
     font-weight:        lighter;
-    font-size:          16px;
+    font-size:          1rem;
     font-family:        "MS PGothic", sans-serif;
 }
 
 ::selection {
-    background: #e1e1e1;
+    background: #eeeeee;
 }
 
 /* divs */
@@ -54,7 +47,7 @@ body {
     text-align:         justify;
     border-style:       none;
     border-width:       var(--lineW);
-    border-radius:      calc(var(--pad) * 9);
+    border-radius:      calc(var(--pad) * 0);
     border-color:       var(--subCol);
     background-color:   transparent;
 
@@ -74,16 +67,41 @@ body {
     padding-bottom:     calc(var(--pad) * 4);
 
     
-    margin-top:         calc(var(--pad) * 8);
+    margin-top:         calc(var(--pad) * 10);
+    margin-bottom:         calc(var(--pad) * 10);
     
+
+    line-height:        calc(var(--pad) * 4);
+    word-wrap:          break-word;
+    overflow:           auto;
+    border-style:       none;
+    border-width:       var(--lineW);
+    border-radius:      calc(var(--pad) * 0);
+    
+    border-color:       var(--subCol);
+}
+
+.insert {
+    display:            block;
+    text-align:         justify;
+    margin:             var(--pad);
 
     line-height:        calc(var(--pad) * 4);
     word-wrap:          break-word;
     overflow:           auto;
     border-style:       solid;
     border-width:       var(--lineW);
-    border-radius:      calc(var(--pad) * 8);
+    border-radius:      calc(var(--pad) * 4);
+    
     border-color:       var(--subCol);
+
+    padding-left:       calc(var(--pad) * 2);
+    padding-right:      calc(var(--pad) * 2);
+    
+    margin-top:         calc(var(--pad) * 4);
+    margin-left:        calc(var(--pad) * 2);
+    margin-right:       calc(var(--pad) * 2);
+    margin-bottom:      calc(var(--pad) * 4);
 }
 
 
@@ -94,12 +112,14 @@ h1 {
     display:            block;
     text-align:         justify;
     font-weight:        lighter;
-    font-size:          16px;
+    font-size:          1rem;
     font-family:        "MS PGothic", sans-serif;
-    
+
+    padding-top:        calc(var(--pad) * 0);
     padding-left:       calc(var(--pad) * 2);
     padding-right:      calc(var(--pad) * 2);
-    
+    padding-bottom:     calc(var(--pad) * 0);
+
     margin-top:         calc(var(--pad) * 2);
     margin-left:        calc(var(--pad) * 2);
     margin-right:       calc(var(--pad) * 2);
@@ -108,8 +128,11 @@ h1 {
 
 ul {
     list-style-type:    none;
+
+    padding-top:        calc(var(--pad) * 0);
     padding-left:       calc(var(--pad) * 4);
     padding-right:      calc(var(--pad) * 4);
+    padding-bottom:     calc(var(--pad) * 0);
 
     margin-top:         calc(var(--pad) * 2);
     margin-left:        calc(var(--pad) * 2);
@@ -133,16 +156,20 @@ a {
 
 a:hover {
     text-decoration:    none;
-    background-color:   #e1e1e1;
+    background-color:   #eeeeee;
     color:              var(--linkCol);
 }
 
 hr {
 
     width:              calc(25% - calc(var(--pad) * 8));
+    width:              100%;
     border:             none;
     border-top:         1px dashed var(--subCol);
     height:             1px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    
 }
 
 p {
