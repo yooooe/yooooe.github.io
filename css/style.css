@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: auto;
+    scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 950px) {
@@ -35,6 +35,7 @@ body {
     font-weight:        lighter;
     font-size:          1rem;
     font-family:        "MS PGothic", sans-serif;
+    margin: 0;
 }
 
 ::selection {
@@ -46,18 +47,9 @@ body {
     display:            block;
     text-align:         justify;
     background-color:   transparent;
-
     border-style:       none;
-    border-width:       var(--lineW);
-    border-radius:      0;
-    border-color:       var(--subCol);
-
     padding:            auto;
-    
-    margin-top:         calc(var(--pad) * 1);
-    margin-left:        auto;
-    margin-right:       auto;
-    margin-bottom:      calc(var(--pad) * 1);
+    margin:             auto;
 }
 
 .index {
@@ -67,20 +59,13 @@ body {
     word-wrap:          break-word;
     overflow:           break-word;
 
-    border-style:       none;
+    border-style:       solid;
     border-width:       var(--lineW);
     border-color:       var(--subCol);
     border-radius:      0;
 
-    padding-top:        calc(var(--pad) * 4);
-    padding-left:       calc(var(--pad) * 2);
-    padding-right:      calc(var(--pad) * 2);
-    padding-bottom:     calc(var(--pad) * 4);
-
-    margin-top:         calc(var(--pad) * 4);
-    margin-left:        var(--pad);
-    margin-right:       var(--pad);
-    margin-bottom:      calc(var(--pad) * 1);
+    padding-bottom: 0.5em;  
+    margin-bottom: 0.5em;    
 }
 
 .insert {
@@ -120,7 +105,7 @@ h1 {
     display:            block;
     text-align:         justify;
 
-    padding-top:        calc(var(--pad) * 0);
+    padding-top:        calc(var(--pad) * 2);
     padding-left:       calc(var(--pad) * 2);
     padding-right:      calc(var(--pad) * 2);
     padding-bottom:     calc(var(--pad) * 0);
@@ -128,7 +113,7 @@ h1 {
     margin-top:         calc(var(--pad) * 2);
     margin-left:        calc(var(--pad) * 2);
     margin-right:       calc(var(--pad) * 2);
-    margin-bottom:      calc(var(--pad) * 6);
+    margin-bottom:      calc(var(--pad) * 4);
 }
 
 h2 {
@@ -178,6 +163,7 @@ li:before {
 a {
     text-decoration:    none;
     color:              var(--linkCol);
+    
 }
 
 a:hover {
@@ -193,8 +179,8 @@ hr {
     border:             none;
     border-top:         1px dashed var(--subCol);
 
-    margin-top:         2em;
-    margin-bottom:      2em;
+    margin-top:         1em;
+    margin-bottom:      1em;
 }
 
 p {
@@ -227,6 +213,7 @@ img {
     justify-content:    space-between;
     align-content:      space-around;
     align-items:        flex-start;
+    
 }
 
 .flex-cell {
@@ -242,9 +229,6 @@ img {
 .flex-cell>a {
     text-decoration:    none;
     background-color:   transparent;
-    border-radius:      calc(var(--pad) * 2);
-    border:             none 1px var(--subCol);
-    padding:            calc(var(--pad) * 2);
 }
 
 .flex-cell>a:active, .flex-cell>a:hover {
