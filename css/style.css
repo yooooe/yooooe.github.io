@@ -62,7 +62,7 @@ body {
     border-style:       solid;
     border-width:       var(--lineW);
     border-color:       var(--subCol);
-    border-radius:      0;
+    border-radius:      1em;
 
     padding-bottom: 0.5em;  
     margin-bottom: 0.5em;    
@@ -79,7 +79,7 @@ body {
     border-style:       solid;
     border-width:       var(--lineW);  
     border-color:       var(--subCol);
-    border-radius:      calc(var(--pad) * 4);
+    border-radius:      1em;
 
     padding-top:        calc(var(--pad) * 0);
     padding-left:       calc(var(--pad) * 2);
@@ -170,6 +170,7 @@ a:hover {
     text-decoration:    none;
     background-color:   #eeeeee;
     color:              var(--linkCol);
+    
 }
 
 hr {
@@ -224,14 +225,4 @@ img {
     margin:             var(--pad);
     border-radius:      var(--pad);
     border-color:       var(--subCol);
-}
-
-.flex-cell>a {
-    text-decoration:    none;
-    background-color:   transparent;
-}
-
-.flex-cell>a:active, .flex-cell>a:hover {
-    border:             none 1px var(--subCol);
-    background-color:   #eeeeee;
 }
