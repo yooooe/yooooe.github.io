@@ -6,16 +6,32 @@ html {
     /* Css for Mobile goes here*/
     .container {
         width:  100%;
-        --pad:  5px;
+        --pad:  3px;
         -webkit-text-size-adjust: none;
+    }
+
+    .index {
+        border-style:       solid;
+        border-left-style:  none;
+        border-right-style: none;
+        border-width:       var(--lineW);
+        border-color:       var(--subCol);
+        border-radius:      0em;
     }
 }
 
 @media only screen and (min-width: 950px) {
     /* Css for Desktop goes here*/
     .container {
-        width:  640px;
+        width:  38em;
         --pad:  4px;
+    }
+
+    .index {
+        border-style:       solid;
+        border-width:       var(--lineW);
+        border-color:       var(--subCol);
+        border-radius:      0em;
     }
 }
 
@@ -32,11 +48,18 @@ body {
     position:           relative;
     overflow-y:         scroll;
 
-    font-weight:        lighter;
-    font-size:          1rem;
+
+    -webkit-font-smoothing:     antialiased;
+    text-rendering:             optimizelegibility;
     font-family:        "MS PGothic", sans-serif;
-    margin-top: 0;
-    margin-bottom: 4em;
+    font-size:          1rem;
+    font-weight:        100;
+    line-height:        1em;
+
+    margin-top:         0.0em;
+    margin-left:        0;
+    margin-right:       0;
+    margin-bottom:      1.5em;
 }
 
 ::selection {
@@ -47,8 +70,10 @@ body {
 .container {
     display:            block;
     text-align:         justify;
+
     background-color:   transparent;
     border-style:       none;
+    
     padding:            auto;
     margin:             auto;
 }
@@ -56,51 +81,46 @@ body {
 .index {
     display:            block;
     text-align:         justify;
-    line-height:        1em;
+    
     word-wrap:          break-word;
     overflow:           break-word;
 
-    border-style:       solid;
-    border-width:       var(--lineW);
-    border-color:       var(--subCol);
-    border-radius:      1em;
-
-    padding-bottom: 0.5em;  
-    margin-bottom: 0.5em;    
+    padding-bottom:     0.5em;
+    margin-bottom:      0.5em;
 }
 
 .insert {
     display:            block;
     text-align:         justify;
-    margin:             var(--pad);
-    line-height:        calc(var(--pad) * 4);
+
+    margin:             1.0em;
+    line-height:        1.0em;
     word-wrap:          break-word;
     overflow:           auto;
 
     border-style:       solid;
     border-width:       var(--lineW);  
     border-color:       var(--subCol);
-    border-radius:      1em;
+    border-radius:      1.0em;
 
-    padding-top:        calc(var(--pad) * 0);
-    padding-left:       calc(var(--pad) * 2);
-    padding-right:      calc(var(--pad) * 2);
-    padding-bottom:     calc(var(--pad) * 0.5);
+    padding-top:        0.0em;
+    padding-left:       0.5em;
+    padding-right:      0.5em;
+    padding-bottom:     0.2em;
     
-    margin-top:         calc(var(--pad) * 4);
-    margin-left:        calc(var(--pad) * 2);
-    margin-right:       calc(var(--pad) * 2);
-    margin-bottom:      calc(var(--pad) * 4);
+    margin-top:         1.0em;
+    margin-left:        0.5em;
+    margin-right:       0.5em;
+    margin-bottom:      1.0em;
 }
-
 
 /* text/media style */
 h1 {
     color:              var(--textCol);
     background-color:   transparent;
     
-    font-weight:        lighter;
-    font-size:          1rem;
+    font-weight:        100;
+    font-size:          1.0rem;
     font-family:        "MS PGothic", sans-serif;
 
     display:            block;
@@ -115,28 +135,6 @@ h1 {
     margin-left:        calc(var(--pad) * 2);
     margin-right:       calc(var(--pad) * 2);
     margin-bottom:      calc(var(--pad) * 4);
-}
-
-h2 {
-    color:              var(--textCol);
-    background-color:   transparent;
-    
-    font-weight:        lighter;
-    font-size:          1rem;
-    font-family:        "MS PGothic", sans-serif;
-
-    display:            block;
-    text-align:         center;
-
-    padding-top:        calc(var(--pad) * 0);
-    padding-left:       calc(var(--pad) * 2);
-    padding-right:      calc(var(--pad) * 2);
-    padding-bottom:     calc(var(--pad) * 0);
-
-    margin-top:         calc(var(--pad) * 2);
-    margin-left:        calc(var(--pad) * 2);
-    margin-right:       calc(var(--pad) * 2);
-    margin-bottom:      calc(var(--pad) * 6);
 }
 
 ul {
@@ -154,11 +152,16 @@ ul {
 }
 
 li {
-    margin-bottom:      var(--pad);
+    margin-bottom:      0.5em;
 }
 
 li:before {
-    padding-right:      calc(var(--pad) * 2);
+    padding-right:      0.0em;
+    content: none;
+}
+li:after {
+    padding-left:      0.0em;
+    content: none;
 }
 
 a {
@@ -186,14 +189,14 @@ hr {
 
 p {
     padding-top:        auto;
-    padding-left:       calc(var(--pad) * 2);
-    padding-right:      calc(var(--pad) * 2);
+    padding-left:       0.5em;
+    padding-right:      0.5em;
     padding-bottom:     auto;
     
-    margin-top:         calc(var(--pad) * 2);
-    margin-left:        calc(var(--pad) * 2);
-    margin-right:       calc(var(--pad) * 2);
-    margin-bottom:      calc(var(--pad) * 2);
+    margin-top:         0.5em;
+    margin-left:        0.5em;
+    margin-right:       0.5em;
+    margin-bottom:      0.5em;
 }
 
 img {
@@ -201,10 +204,9 @@ img {
     object-fit:         cover;
     width:              100%;
 
-    padding-top:        calc(var(--pad) * 4);
-    padding-bottom:     calc(var(--pad) * 4);
+    margin-top:        0.5em;
+    margin-bottom:     0.5em;
 
-    margin:             auto;
 }
 
 /* nav bar */
