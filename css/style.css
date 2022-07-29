@@ -35,7 +35,8 @@ body {
     font-weight:        lighter;
     font-size:          1rem;
     font-family:        "MS PGothic", sans-serif;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 4em;
 }
 
 ::selection {
@@ -170,7 +171,6 @@ a:hover {
     text-decoration:    none;
     background-color:   #eeeeee;
     color:              var(--linkCol);
-    
 }
 
 hr {
@@ -225,4 +225,11 @@ img {
     margin:             var(--pad);
     border-radius:      var(--pad);
     border-color:       var(--subCol);
+}
+
+.flex-cell>a:active, .flex-cell>a:hover {
+    text-decoration:    none;
+    background-color:   transparent;
+    color:              var(--linkCol);
+    filter: blur(1px);
 }
