@@ -59,7 +59,7 @@ body {
     margin-top:         0.0em;
     margin-left:        0;
     margin-right:       0;
-    margin-bottom:      1.5em;
+    margin-bottom:      0.0em;
 }
 
 ::selection {
@@ -121,7 +121,6 @@ h1 {
     
     font-weight:        100;
     font-size:          1.0rem;
-    font-family:        "MS PGothic", sans-serif;
 
     display:            block;
     text-align:         justify;
@@ -167,7 +166,6 @@ li:after {
 a {
     text-decoration:    none;
     color:              var(--linkCol);
-    
 }
 
 a:hover {
@@ -216,22 +214,25 @@ img {
     justify-content:    space-between;
     align-content:      space-around;
     align-items:        flex-start;
-    
 }
 
 .flex-cell {
     text-align:         center;
     flex-grow:          1;
-    padding:            var(--pad);
-    padding-bottom:     calc(var(--pad) * 2);
-    margin:             var(--pad);
-    border-radius:      var(--pad);
+    padding:            0.25em;
+    padding-bottom:     0.25em;
+    margin:             0.25em;
     border-color:       var(--subCol);
+    color:              #a1a1a1;
+}
+
+.flex-cell>a {
+    text-decoration:    none;
+    background-color:   transparent;
 }
 
 .flex-cell>a:active, .flex-cell>a:hover {
     text-decoration:    none;
     background-color:   transparent;
-    color:              var(--linkCol);
-    filter: blur(1px);
+    filter:             blur(0.5px);
 }
