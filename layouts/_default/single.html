@@ -1,16 +1,13 @@
 {{ define "main" }}
-<section class='container'>
-    <div class='index'>
-        <h1>
-            <span style="display:block;">
-                {{ .Title }}
-                {{ partial "date.html" . }}
-            </span>
-            <span style="display:block;">
-                {{ partial "tags.html" . }}
-            </span>
-        </h1>
-        {{ .Content }}
-    </div>
-</section>
+<h1>
+    {{ .Title }}
+    <span style="float:right;">
+        {{ .Date.Format .Site.Params.dateFormat }}
+    </span>
+</h1>
+<h1 style="margin-top:0;">
+    {{ partial "tags.html" . }}
+</h1>
+<hr style="margin-top:0.5em;">
+{{ .Content }}
 {{ end }}

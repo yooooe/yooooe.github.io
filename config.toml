@@ -1,6 +1,6 @@
 baseURL = 'https://yooooe.github.io/'
 languageCode = 'en-us'
-title = 'YOE'
+title = 'index'
 
 [permalinks]
     blog = "/:filename"
@@ -25,3 +25,6 @@ title = 'YOE'
 [params]
     dateFormat = "02 01 06"
     homeText = ""
+
+[markup.goldmark.renderer]
+unsafe= true

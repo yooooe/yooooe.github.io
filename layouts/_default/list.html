@@ -1,14 +1,13 @@
 {{ define "main" }}
-<section class='container'>
-    <div class='index'>
-        {{ range .Pages.ByPublishDate.Reverse }}
-        <p>
-            <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span style="float:right;">
-                {{ partial "date.html" . }}
-            </span>
-        </p>
-        {{ end }}
-    </div>
-</section>
+<div class="title">
+    <h1>posts about #{{ .Title }}</h1>
+</div>
+<ul>
+{{ range .Pages.ByPublishDate.Reverse }}
+<li>
+    <a class="font-125" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </a><div class="dot"></div>
+    {{ .Date.Format .Site.Params.dateFormat }}
+</li>
+{{ end }}
 {{ end }}

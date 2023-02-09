@@ -1,0 +1,22 @@
+{{ define "nav" }}
+<ul>
+    <li><a href="/">🦎</a></li>
+    <li></li>
+    <li><a href="https://soundcloud.com/yoeyoeyoe">soundcloud</a></li>
+    <li><a href="https://github.com/yooooe/yooooe.github.io">github</a></li>
+</ul>
+{{ end }}
+
+
+
+{{ define "tags" }}
+<ul>
+{{ range .Data.Terms.Alphabetical }}
+<li>
+    <a href="{{ .Page.Permalink }}">
+    #{{ .Page.Title }}
+    </a>
+</li>
+{{ end }}
+</ul>
+{{ end }}

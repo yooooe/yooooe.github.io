@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "head.html" . }}
-    <body>
-        {{ partial "nav.html" . }}
-        {{ block "main" . }}{{ end }}
-        <!--
-            {{ partial "footer.html" . }}
-        -->
-        
+    <body>        
+        <section class='container'>
+            <div class='nav'>
+                {{ block "nav" . }}{{ end }}
+            </div>
+            <div class='index'>
+                {{ block "main" . }}{{ end }}
+            </div>
+            <div class='nav'>
+                {{ block "tags" . }}{{ end }}
+            </div>
+        </section>
     </body>
 </html>
