@@ -10,7 +10,8 @@ html {
     /* Css for Desktop goes here*/
 }
 
-body {
+body
+{
     /* Var*/
     --textCol:          #000;
     --linkCol:          #000;
@@ -30,7 +31,9 @@ body {
     font-weight:        100;
     
 
-    font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-family:        "Noto Sans", -apple-system, BlinkMacSystemFont, 
+                        "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", 
+                        "Cantarell", "Helvetica Neue", sans-serif;
 
     margin-top:         1.0rem;
     margin-left:        1.0rem;
@@ -43,7 +46,8 @@ body {
 }
 
 /* divs */
-.container {    
+.container
+{    
     padding:            auto;
     margin-top:         1.0rem;
     margin-left:        auto;
@@ -51,15 +55,9 @@ body {
     margin-bottom:      1.0rem;
 
     display:            flex;
-    justify-content:    center;
-
     flex-wrap:          wrap;
-
-    
-
     justify-content:    center;
     align-content:      space-around;
-    
     align-items:        flex-start;
 
     border-style:       none;
@@ -70,7 +68,7 @@ body {
 
 .index {
     text-align:         justify;
-    width:              40rem;
+    width:              35rem;
     height:             fit-content;
 
     word-wrap:          break-word;
@@ -114,23 +112,8 @@ body {
     border-radius:      0.0rem;
 }
 
-.top {
-    position:fixed;
-    top:                20rem;
-    
-    text-align:         justify;
-
-
-    padding-bottom:     0.5rem;
-    margin:             0.5rem;
-
-    border-style:       none;
-    border-width:       var(--lineW);
-    border-color:       var(--subCol);
-    border-radius:      0.0rem;
-}
-
-.insert {
+.insert
+{
     display:            block;
     text-align:         justify;
 
@@ -156,7 +139,8 @@ body {
 
 /* text/media style */
 
-p {
+p
+{
     padding-top:        auto;
     padding-left:       1.0rem;
     padding-right:      1.0rem;
@@ -168,11 +152,13 @@ p {
     margin-bottom:      1.0rem;
 }
 
-p>a{
-    text-decoration: underline;
+p > a
+{
+    text-decoration:    underline;
 }
 
-h1 {
+h1
+{
     color:              var(--textCol);
     background-color:   transparent;
     font-weight:        inherit;
@@ -185,27 +171,31 @@ h1 {
     margin-bottom:      0.0em;
 }
 
-ul {
+ul
+{
     list-style-type:    none;
     padding-left:       0.5em;
     padding-right:      0.5em;
     margin-top:         1.0em;
     margin-left:        0.5em;
     margin-right:       0.5em;
-    margin-bottom:      1.0em; 
+    margin-bottom:      0.5em; 
 }
 
-li {
+li
+{
     margin-bottom:      0.25rem;
     display:            flex;
     flex-flow:          row;
 }
 
-li:before {
+li:before
+{
     content: none;
 }
 
-li>a {
+li > a
+{
     margin-right:       0.5em;
 }
 
@@ -216,7 +206,8 @@ hr {
     margin-bottom:      0.0em;
 }
 
-.insert>p{
+.insert > p
+{
     padding-top:        auto;
     padding-left:       0.5em;
     padding-right:      0.5em;
@@ -232,8 +223,8 @@ img {
     display:            block;
     object-fit:         cover;
     width:              100%;
-    margin-top:        0.5em;
-    margin-bottom:     0.5em;
+    margin-top:         0.5em;
+    margin-bottom:      0.5em;
 }
 
 /* nav bar */
@@ -272,7 +263,7 @@ summary:before {
 }
 
 summary::marker {
-    color:              var(--linkCol);
+    color: var(--linkCol);
 }
 
 .dot {
@@ -291,33 +282,37 @@ a {
 
 a:hover {
     text-decoration:    none;
-    transform:          scale(2, 1);
+    transform:          scale(3, 1);
     color:              var(--linkCol);
 }
 
 a:active {
-    transform:          scale(2, 1);
+    transform:          scale(3, 1);
 }
 
 
-.footnotes>ol>li:before {
+.footnotes>ol>li:before
+{
    
 }
 
-.footnotes>ol>li>p {
+.footnotes>ol>li>p
+{
     
-
     margin: auto;
 }
 
-a[href^="#fn:"]:hover {
+a[href^="#fn:"]:hover
+{
     text-decoration: underline;
 }
 
-a[href^="#fn:"]:before{ 
+a[href^="#fn:"]:before
+{ 
     content: '[ ';
 }
 
-a[href^="#fn:"]:after{ 
+a[href^="#fn:"]:after
+{ 
     content: " ]";
 }
