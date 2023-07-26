@@ -67,8 +67,8 @@ body
 }
 
 .index {
-    text-align:         justify;
-    width:              35rem;
+    text-align:         flex;
+    width:              100%;
     height:             fit-content;
 
     word-wrap:          break-word;
@@ -179,7 +179,7 @@ ul
     margin-top:         1.0em;
     margin-left:        0.5em;
     margin-right:       0.5em;
-    margin-bottom:      0.5em; 
+    margin-bottom:      0.5em;
 }
 
 li
@@ -258,12 +258,18 @@ details {
     padding: 0.5rem;
 }
 
-summary:before {
-    content: none;
+summary {
+    margin-bottom: 0.15em;
 }
 
-summary::marker {
+details > summary::marker {
     color: var(--linkCol);
+    content: '🡢';
+}
+
+details[open] > summary::marker {
+    color: var(--linkCol);
+    content: '🡣';
 }
 
 .dot {
