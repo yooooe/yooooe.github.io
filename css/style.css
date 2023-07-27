@@ -94,25 +94,6 @@ body
     border-radius:      0.5rem;    
 }
 
-.nav {
-
-    position:           -webkit-sticky;
-    position:           sticky;
-    top:                1.5rem;
-    
-    text-align:         justify;
-    width:              10em;
-    height:             fit-content;
-
-    padding-bottom:     0.5rem;
-    margin:             0.5rem;
-
-    border-style:       none;
-    border-width:       var(--lineW);
-    border-color:       var(--subCol);
-    border-radius:      0.0rem;
-}
-
 .insert
 {
     display:            block;
@@ -153,53 +134,6 @@ p
     margin-bottom:      1.0rem;
 }
 
-p > a
-{
-    text-decoration:    underline;
-}
-
-h1
-{
-    color:              var(--textCol);
-    background-color:   transparent;
-    font-weight:        inherit;
-    font-size:          inherit;
-    display:            block;
-    text-align:         justify;
-    margin-top:         0.5em;
-    margin-left:        1.0em;
-    margin-right:       1.0em;
-    margin-bottom:      0.0em;
-}
-
-ul
-{
-    list-style-type:    none;
-    padding-left:       0.5em;
-    padding-right:      0.5em;
-    margin-top:         1.0em;
-    margin-left:        0.5em;
-    margin-right:       0.5em;
-    margin-bottom:      0.5em;
-}
-
-li
-{
-    margin-bottom:      0.25rem;
-    display:            flex;
-    flex-flow:          row;
-}
-
-li:before
-{
-    content: none;
-}
-
-li > a
-{
-    margin-right:       0.5em;
-}
-
 hr {
     border:             none;
     border-top:         1px dashed var(--subCol);
@@ -228,98 +162,13 @@ img {
     margin-bottom:      0.5em;
 }
 
-/* nav bar */
-.flex-container {
-    display:            flex;
-    flex-wrap:          wrap;
-    justify-content:    space-between;
-    align-content:      space-around;
-    align-items:        flex-start;
-}
-
-.flex-cell {
-    text-align:         center;
-    flex-grow:          1;
-    padding:            0.25em;
-    padding-bottom:     0.25em;
-    margin:             0.25em;
-    border-color:       var(--subCol);
-    color:              #a1a1a1;
-}
-
-.flex-cell>a {
-    text-decoration:    none;
-}
-
-.flex-cell>a:active, .flex-cell>a:hover {
-    text-decoration:    none;
-}
-
-details {
-    padding: 0.5rem;
-}
-
-summary {
-    margin-bottom: 0.15em;
-}
-
-details > summary::marker {
-    color: var(--linkCol);
-    content: '🡢';
-}
-
-details[open] > summary::marker {
-    color: var(--linkCol);
-    content: '🡣';
-}
-
-.dot {
-    flex: 1;
-    background-image:       linear-gradient(to right, var(--subCol) 0% , transparent 0%);
-    background-position:    right;
-    background-size:        1rem 1px;
-    background-repeat:      repeat-x;
-    margin-top:             0.25em;
-    
-}
 a {
     text-decoration:    none;
     color:              var(--linkCol);
 }
 
-a:hover {
+a:hover, a:active{
     text-decoration:    none;
     transform:          scale(3, 1);
     color:              var(--linkCol);
-}
-
-a:active {
-    transform:          scale(3, 1);
-}
-
-
-.footnotes>ol>li:before
-{
-   
-}
-
-.footnotes>ol>li>p
-{
-    
-    margin: auto;
-}
-
-a[href^="#fn:"]:hover
-{
-    text-decoration: underline;
-}
-
-a[href^="#fn:"]:before
-{ 
-    content: '[ ';
-}
-
-a[href^="#fn:"]:after
-{ 
-    content: " ]";
 }
